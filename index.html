@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Sistema de Biblioteca</title>
+</head>
+
+<body>
+  <table>
+    <tr>
+      <th colspan="2">
+        <h1>1. Definição do Sistema/System Definition</h1>
+      </th>
+    </tr>
+    <tr>
+      <td>Requisitos Principais:</td>
+      <td>
+        <ul>
+          <li>Livros: Adicionar, editar e eliminar informações de livros - ID, Título, autor, género, disponibilidade.
+          </li>
+          <li>Utilizadores: Registar estudantes, professores e funcionários da biblioteca; Nome, ID, tipo de utilizador.
+          </li>
+          <li>Empréstimos e retorna de livros: Realizar empréstimos e devoluções de livros - ID, livro ID, ID do
+            usuário, data do empréstimo, data de retorno, estado.</li>
+          <li>Pesquisa de livros: permite pesquisar livros por nome, autor ou gênero</li>
+          <li>Registro histórico: Mantém um histórico completo de todos os empréstimos de livros</li>
+          <li>Acesso à Internet: O sistema requer conectividade à Internet</li>
+          <li>Site da Biblioteca: O sistema é acessado através do site da biblioteca dedicado da escola.</li>
+          <li>Autenticação com Email Escolar: O ID do usuário é o email da escola</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>Main Requirements:</td>
+      <td>
+        <ul>
+          <li>Books: Add, edit and delete book information - ID, Title, Author, Genre, Availability.</li>
+          <li>Users: Register students, teachers and library officials; Nome, ID, user type.</li>
+          <li>Book loans and returns: Make book loans and returns - ID, book ID, user ID, loan data, return data,
+            status.</li>
+          <li>Book Search: allows you to search for books by name, author or genre</li>
+          <li>Historical record: Maintain a complete history of all book loans</li>
+          <li>Internet Access: The system requires Internet connectivity</li>
+          <li>Library Site: The system is accessed through the library site dedicated to the school.</li>
+          <li>Authentication with School Email: The user ID is the school email</li>
+        </ul>
+      </td>
+    </tr>
+  </table>
+   <br><br> <table>
+    <tr>
+      <th style="width: 50%;"><h2>Funcionalidades Básicas (CRUD)</h2></th>
+      <th style="width: 50%;"><h2>Basic Functionalities (CRUD)</h2></th>
+    </tr>
+    <tr>
+      <td style="width: 50%;">
+        <h3>Criar:</h3>
+        <ul>
+          <li>Registar um novo livro</li>
+          <li>Registar um novo utilizador.</li>
+          <li>Registar um novo empréstimo.</li>
+        </ul>
+      </td>
+      <td style="width: 50%;">
+        <h3>Create:</h3>
+        <ul>
+          <li>Register a new book</li>
+          <li>Register a new user.</li>
+          <li>Register a new loan.</li>
+        </ul>
+      </td>
+    </tr>
+
+    <tr>
+      <td style="width: 50%;">
+        <h3>Ler:</h3>
+        <ul>
+          <li>Mostrar lista de livros disponíveis.</li>
+          <li>Mostrar informações sobre um livro específico.</li>
+          <li>Lista utilizadores registados.</li>
+          <li>Mostrar histórico de empréstimos.</li>
+        </ul>
+      </td>
+      <td style="width: 50%;">
+        <h3>Read:</h3>
+        <ul>
+          <li>Show list of available books.</li>
+          <li>Show information about a specific book.</li>
+          <li>List registered users.</li>
+          <li>Show loan history.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td style="width: 50%;">
+        <h3>Atualizar:</h3>
+        <ul>
+          <li>Atualizar dados de um utilizador.</li>
+          <li>Edite informações sobre um livro.</li>
+          <li>Registar a devolução de um livro.</li>
+        </ul>
+      </td>
+      <td style="width: 50%;">
+        <h3>Update:</h3>
+        <ul>
+          <li>Update user data.</li>
+          <li>Edit information about a book.</li>
+          <li>Register the return of a book.</li>
+        </ul>
+      </td>
+    </tr>
+
+    <tr>
+      <td style="width: 50%;">
+        <h3>Eliminar:</h3>
+        <ul>
+          <li>Eliminar um livro da base de dados.</li>
+          <li>Eliminar um utilizador.</li>
+        </ul>
+      </td>
+      <td style="width: 50%;">
+        <h3>Delete:</h3>
+        <ul>
+          <li>Delete a book from the database.</li>
+          <li>Delete a user.</li>
+        </ul>
+      </td>
+    </tr>
+    
+    
+    
+    
+    <!-- <tr>
+      <th colspan="2">
+        <h2>Funcionalidades Básicas (CRUD)/Basic Functionalities (CRUD)</h2>
+      </th>
+    </tr>
+    <tr>
+      <td>
+        <h3>Criar:</h3>
+      </td>
+      <td>
+        <ul>
+          <li>Registar um novo livro</li>
+          <li>Registar um novo utilizador.</li>
+          <li>Registar um novo empréstimo.</li>
+        </ul>
+      </td>
+    </tr>
+    
+  </tr>
+  <tr>
+    <td>
+      <h3>Create:</h3>
+    </td>
+    <td>
+      <ul>
+        <li>Register a new book</li>
+        <li>Register a new user.</li>
+        <li>Register a new loan.</li>
+      </ul>
+    </td>
+  </tr>
+    
+    <tr>
+      <td>
+        <h3>Ler:</h3>
+      </td>
+      <td>
+        <ul>
+          <li>Mostrar lista de livros disponíveis.</li>
+          <li>Mostrar informações sobre um livro específico.</li>
+          <li>Lista utilizadores registados.</li>
+          <li>Mostrar histórico de empréstimos.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <h3>Read:</h3>
+      </td>
+      <td>
+        <ul>
+          <li>Show list of available books.</li>
+          <li>Show information about a specific book.</li>
+          <li>List registered users.</li>
+          <li>Show loan history.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <h3>Atualizar:</h3>
+      </td>
+      <td>
+        <ul>
+          <li>Atualizar dados de um utilizador.</li>
+          <li>Edite informações sobre um livro.</li>
+          <li>Registar a devolução de um livro.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <h3>Update:</h3>
+      </td>
+      <td>
+        <ul>
+          <li>Update user data.</li>
+          <li>Edit information about a book.</li>
+          <li>Register the return of a book.</li>
+        </ul>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <h3>Eliminar:</h3>
+      </td>
+      <td>
+        <ul>
+          <li>Eliminar um livro da base de dados.</li>
+          <li>Eliminar um utilizador.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <h3>Delete:</h3>
+      </td>
+      <td>
+        <ul>
+          <li>Delete a book from the database.</li>
+          <li>Delete a user.</li>
+        </ul>
+      </td>
+    </tr>
+     -->
+    <tr>
+      <th colspan="2">
+        <h2>2. Modelagem de Entidades e Relações:</h2>
+      </th>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <div style="position: relative; width: 100%; height: 0; padding-top: 100.0000%;
+        padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+        border-radius: 8px; will-change: transform;">
+          <iframe loading="lazy"
+            style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+            src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAF7R3ZqctU&#x2F;watch?embed"
+            allowfullscreen="allowfullscreen" allow="fullscreen">
+          </iframe>
+        </div>
+        <a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAF7R3ZqctU&#x2F;watch?utm_content=DAF7R3ZqctU&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link"
+          target="_blank" rel="noopener">Modelagem de Entidades e RealaçõesPortugues</a>
+      </td>
+    </tr>
+  </table>
+</body>
+
+</html>
