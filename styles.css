@@ -1,5 +1,7 @@
 body {
   background: linear-gradient(to bottom right, #FF9BD2, #83C0C1, #E6B9DE, #6895D2);
+  margin-right: 20px;
+  margin-left: 20px;
 }
 
 table {
