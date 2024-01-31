@@ -1,36 +1,37 @@
 body {
-    background: linear-gradient(to bottom right, #EBADC2, #8FBC8F);
-   
-  }
-  
+  background: linear-gradient(to bottom right, #FF9BD2, #83C0C1, #E6B9DE, #6895D2);
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
 table {
-    width: 100%;
-    border-collapse: collapse;
-  }
-  
-  table, th, td {
-    border: 1px solid rgba(0, 0, 0, 0.945);
-  }
-  
-  th {
-    text-align: center;
-    padding: 10px;
-  }
-  
-  td {
-    padding: 10px;
-  }
-  
-  h1 {
-    font-size: 1.5em;
-  }
-  
-  h2 {
-    font-size: 1.2em;
-  }
-  
-  h3 {
-    font-size: 1em;
-    text-align: center;
-  }
-  
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid rgba(0, 0, 0, 0.945);
+}
+
+th {
+  text-align: center;
+  padding: 10px;
+}
+
+td {
+  padding: 10px;
+}
+
+h1 {
+  font-size: 1.5em;
+}
+
+h2 {
+  font-size: 1.2em;
+}
+
+h3 {
+  font-size: 1em;
+  text-align: center;
+}
+/* Restante do código CSS... */
