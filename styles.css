@@ -1,11 +1,11 @@
 body {
   background-color: aliceblue;
-  background-size: contain; /* ou use 'auto' se preferir */
+  background-size: contain; 
   background-repeat: no-repeat;
   margin-right: 70px;
   margin-left: 70px;
   margin-top: 30px;
-  min-height: 00vh; /* Altura mínima da tela */
+  min-height: 00vh; 
 }
 
 table {
