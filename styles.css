@@ -1,5 +1,5 @@
 body {
-  background-image: url('');
+  background-color: aliceblue;
   background-size: contain; /* ou use 'auto' se preferir */
   background-repeat: no-repeat;
   margin-right: 70px;
