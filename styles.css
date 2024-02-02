@@ -1,7 +1,11 @@
 body {
-  background: linear-gradient(to bottom right, #FF9BD2, #83C0C1, #E6B9DE, #6895D2);
-  margin-right: 20px;
-  margin-left: 20px;
+  background-image: url('');
+  background-size: contain; /* ou use 'auto' se preferir */
+  background-repeat: no-repeat;
+  margin-right: 70px;
+  margin-left: 70px;
+  margin-top: 30px;
+  min-height: 00vh; /* Altura mínima da tela */
 }
 
 table {
@@ -34,4 +38,3 @@ h3 {
   font-size: 1em;
   text-align: center;
 }
-/* Restante do código CSS... */
